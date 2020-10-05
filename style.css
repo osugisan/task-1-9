@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  height: 50px;
+  width: 100%;
+  background-color: #ff9a4b;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 960px;
+  display: flex;
+  margin: 50px auto;
+}
+
+.container-item {
+  background-color: #eeeeee;
+  width: 300px;
+  margin-right: 30px;
+  padding: 10px;
+  position: relative;
+}
+
+.container-item:last-child {
+  margin-right: 0%;
+}
+
+.logo {
+  color: #ffffff;
+  background-color: #ff9a4b;
+  padding: 3px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.container-img1 {
+  background-image: url(img/flow01.png);
+  height: 150px;
+  background-size: cover;
+  background-position: bottom;
+}
+
+.container-img2 {
+  background-image: url(img/flow02.png);
+  height: 150px;
+  background-size: cover;
+  background-position: bottom;
+}
+
+.container-img3 {
+  background-image: url(img/flow03.png);
+  height: 150px;
+  background-size: cover;
+  background-position: bottom;
+}
+
+.title {
+  margin: 15px 0 5px 0;
+}
+
+footer {
+  background-color: #aaaaaa;
+  height: 50px;
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    width: 100%;
+  }
+
+  main {
+    width: 100%;
+    margin: 0;
+  }
+
+  .container {
+    display: block;
+  }
+
+  .container-item {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .container-img1 .container-img2 .container-img3 {
+    height: 150px;
+  }
+
+  .container-item:nth-child(2) {
+    margin: 20px auto;
+  }
+
+  .container-item:last-child {
+    margin: 0 auto;
+  }
+
+  footer {
+    width: 100%;
+  }
+}
